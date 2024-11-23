@@ -150,9 +150,18 @@ def show_users():
         print("There are no users to show.")
     else:
         print("\nUsers List:")
-        for username, user_data in users.items(): 
-            borrowed = ", ".join(str(book_id) for book_id in user_data["borrowed_books"])
-            print(f"{username} [Borrowed books: {borrowed or 'user does not borrow books.'}]")
+        for username, user_data in users.items():
+            print(f"Username: {username}")
+            borrowed_books = user_data.get("borrowed_books", [])
+            if borrowed_books:
+                print("  Borrowed books:")
+                for book_id in borrowed_books:
+                    book = next((b for b in books if b["id"] == book_id), None)
+                    if book:
+                        print(f"    - {book['id']}. {book['title']} by {book['author']} ({book['year']})")
+            else:
+                print("  No borrowed books.")
+
 
 # Delete users
 def delete_users():
