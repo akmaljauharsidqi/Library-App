@@ -1,0 +1,15 @@
+{
+    "admin": {
+        "username": "admin",
+        "password": "admin",
+        "borrowed_books": []
+    },
+    "kucing": {
+        "username": "kucing",
+        "password": "kambing",
+        "borrowed_books": [
+            1,
+            3
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Harry P.",
+        "author": "Rowlings",
+        "year": 2010,
+        "status": false
+    },
+    {
+        "id": 3,
+        "title": "Physics",
+        "author": "Albert Einstein",
+        "year": 1920,
+        "status": false
+    },
+    {
+        "id": 4,
+        "title": "Bomb",
+        "author": "Oppenheimer",
+        "year": 1942,
+        "status": true
+    }
+]
